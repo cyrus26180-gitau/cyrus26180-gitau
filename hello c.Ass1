@@ -1,0 +1,20 @@
+/*
+Name:Cyrus wainaina ;
+Reg:ct100/G/26180/25;
+Description:hello c:all units for the semester;
+*/
+
+#include<stdio.h>;
+//main function;
+int main() {
+	printf("units for the semester:\n");
+	printf("SPH 2107 Analogue Electronics\n");
+	printf("SPI 2101 Imtroduction to programming and Algorithms\n");
+	printf("SPI 2102 computer systems and organisations\n");
+	printf("SPI 2103 Introduction to Computer Applications\n");
+	printf("SPI 2120 Estentials of accounting\n");
+	printf("SPM 2104 Mathematics for science\n");
+	printf("UCU2105 Fundamentals of ICT\n");
+	printf("UCU 2106 Communication skills\n");
+	return 0;
+}
