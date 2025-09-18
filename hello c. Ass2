@@ -1,0 +1,33 @@
+//hello c.
+/*
+Name:Cyrus wainaina
+Reg:CT100/G/26180/25
+Description: hello c, to prompt to enter: your age,your height,your number,your weight;
+*/
+
+#include<stdio.h>
+
+int main(){
+	int age;
+	int height;
+	int  number;
+	int weight;
+	
+	printf("Enter Your age:");
+	scanf("%d",&age);
+	
+	printf("Enter your height:");
+	scanf("%d",&height);
+	
+	printf("Enter your  number:");
+	scanf("%d",& number);
+	
+	printf("Enter your weight:");
+	scanf("%d",&weight);
+	
+	printf("\nYour age is%d\n",age);
+	printf("\nYour height is%d\n",height);
+	printf("\nYour number is %d\n", number);
+	printf("\nYour weight is %d\n",weight);
+	return 0;
+}
