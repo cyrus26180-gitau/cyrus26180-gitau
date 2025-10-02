@@ -1,0 +1,26 @@
+/*
+Name: Cyrus wainaina
+reg:CT100/G/26180
+Description: user to enter radius,height to find voume and surface area of a cylinder.
+*/
+#include <stdio.h>
+#define pi 3.142
+int main() {
+	 float height, radius, volume, surface_area;
+	
+// prompt to enter height
+    printf("Enter height:\n");
+    scanf("%f",&height);
+// prompt to enter radius
+    printf("Enter radius of cylinder :\n");
+     scanf("%f",&radius);
+
+    surface_area= 2*pi*radius*radius+2*pi*radius*height;
+ 
+   volume = pi*radius*radius*height;
+   
+     printf("surface_area of cylinder %.2f\n",surface_area);
+     printf("volume of cylinder%.2f\n",volume);
+    
+  return 0;
+}
