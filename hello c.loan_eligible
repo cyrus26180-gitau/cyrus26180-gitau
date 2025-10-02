@@ -1,0 +1,25 @@
+/*
+name:Cyrus wainaina
+reg:ct100/g/26180/25
+descripition:loan qualification
+*/
+#include<stdio.h>
+int main () {
+	int age;
+	int annual_income;
+	
+	printf("enter age:\t");
+	scanf("%d",&age);
+	
+	printf("enter your annual_income:\t");
+	scanf("%d " ,&annual_income);
+	
+	if (age >=21 &&annual_income>=21000)
+	{
+	printf("congraturations you qualify for a loan.\n");
+	}
+	else {
+	printf("unfortunately,we are unable to offer you the loan.");
+	}
+	return 0;
+}
