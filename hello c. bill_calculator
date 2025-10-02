@@ -1,0 +1,29 @@
+/*
+Name: Cyrus wainaina
+Reg no. CT100/G/26180/25
+description: c program for a water bill calculator
+*/
+#include <stdio.h>
+int main () {
+	int water_units;
+	float total_bill;
+	int a = 20;
+	int b = 25;
+	int c = 30;
+	
+	printf("Enter water_units consumed:");
+	scanf("%d",&water_units);
+	
+	if(water_units >=0 &&water_units<=30){
+		total_bill = water_units*a;
+	}
+	else if(water_units="31" && water_units<=60){
+		total_bill = water_units*b;
+	}
+	else if(water_units >= 60){
+		total_bill = water_units*c;
+	}
+	printf("total_bill (kes) = %.2f\n",total_bill);
+	
+	return 0;
+}
