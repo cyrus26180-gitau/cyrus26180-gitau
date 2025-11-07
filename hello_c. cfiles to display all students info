@@ -1,0 +1,36 @@
+/*
+Name: Cyrus Wainaina
+Reg No: CT100/G/26180/25
+Description: program to read students examination results.
+*/
+#include <stdio.h>
+
+struct Student {
+    char name[50];
+    char regNo[20];
+    float marks;
+};
+
+int main() {
+    FILE *file;
+    struct Student s;
+
+    file = fopen("results.dat", "rb"); // open binary file for reading
+    if (file == NULL) {
+        printf("Error: Cannot open results.dat\n");
+        return 1;
+    }
+
+    printf("Student Examination Results:\n");
+    printf("-------------------------------------\n");
+
+    while (fread(&s, sizeof(struct Student), 1, file)) {
+        printf("Name: %s\n", s.name);
+        printf("Reg No: %s\n", s.regNo);
+        printf("Total Marks: %.2f\n", s.marks);
+        printf("-------------------------------------\n");
+    }
+
+    fclose(file);
+    return 0;
+}
