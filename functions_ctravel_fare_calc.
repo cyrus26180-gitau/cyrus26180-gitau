@@ -1,0 +1,21 @@
+/*
+name: Cyrus wainaina
+reg no: ct100/g/26180/25
+description: functions c.travel_fare_calc.
+*/
+
+#include <stdio.h>
+ float calculatefare(int distance) {
+ 	if(distance <=100)
+ 	return distance*50;
+ 	else if (distance >100)
+ 	return 5000;
+ }
+	int main () {
+		int distance;
+		printf("Enter distance (km):");
+		scanf("%d",&distance);
+		printf("fare=% .2f ksh\n",calculatefare(distance));
+		return 0;
+	}
+	

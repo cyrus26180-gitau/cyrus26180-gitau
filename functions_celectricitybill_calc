@@ -1,0 +1,23 @@
+/*
+Name : Cyrus wainaina
+Reg no. CT100/G/26180/25
+description : elrctricty_bill_calculator
+*/
+
+#include <stdio.h>
+	float calculateelectricbill(int units) {
+	 if (units <=100)
+	 return units*10;
+	 else if (units <=200)
+	 return units*15;
+	 else
+	 return units*20;
+}
+	int main () {
+		int units;
+		printf("Enter units :");
+		scanf("%d",&units);
+		printf("bill=%2.f \n",calculateelectricbill(units));
+		return 0;
+	} 
+	
