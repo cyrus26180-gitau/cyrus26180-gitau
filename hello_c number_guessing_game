@@ -1,0 +1,35 @@
+/*
+name:Cyrus wainaina 
+reg no. ct100/g/26180/25
+description:number gussing game.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int secret, guess, attempts = 0;
+
+    // Seed the random number generator
+    srand(time(0));
+    secret = rand() % 10 + 1;  // Random number between 1 and 10
+
+    printf("Guess the number (1 - 10):\n");
+
+    // Loop until the correct number is guessed
+    do {
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        attempts++;
+
+        if (guess > secret)
+            printf("Too high, try again!\n");
+        else if (guess < secret)
+            printf("Too low, try again!\n");
+        else
+            printf("Congratulations! You guessed it in %d attempts!\n", attempts);
+
+    } while (guess != secret);
+
+    return 0;
+}
