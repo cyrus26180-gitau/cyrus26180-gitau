@@ -1,0 +1,28 @@
+/*
+Name:Cyrus wainaina
+Reg no:CT100/G/26180/25
+descripition:While loop program for ATM withdraws
+*/
+
+#include <stdio.h>
+int main () {
+	float balance ,amount,withdraw;
+	
+	while (balance > 0) {
+		printf("your current balance= 21,000\n");
+		
+		printf("Enter amount you wish to withdraw:\n");
+		scanf("%f",&amount);
+		
+		balance -= amount; //step,balance = balance - amount
+	
+		if(balance > balance) {
+			printf("Insuficient balance\n"); }
+			
+			else {
+				balance -=withdraw;
+				printf("balance remaining: %f\n", balance);  } 
+	}
+	return 0;
+}
+	
